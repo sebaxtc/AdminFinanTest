@@ -1,21 +1,14 @@
-//
-//  ContentView.swift
-//  ExameniOS
-//
-//  Created by Sebastian TC on 18/10/22.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var presenter = MovieListPresenter(interactor:
+                                                        MovieListInteractor(movieService: MovieStore.shared))
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            MovieListView(presenter: presenter)
         }
-        .padding()
     }
 }
 
