@@ -12,12 +12,16 @@ class MovieDetailPresenter: ObservableObject {
   
   init(interactor: MovieDetailInteractor) {
     self.interactor = interactor
-      self.movie = interactor.model
+      self.movie = interactor.movie
   }
+    
+    func loadMovie() {
+        interactor.loadMovie(id: movie.id)
+    }
     
   func linkBuilder<Content: View>(for movie: Movie, @ViewBuilder content: () -> Content
   ) -> some View {
-    NavigationLink(destination: router.makeDetailView(for: movie, model: interactor.model)) {
+    NavigationLink(destination: router.makeDetailView(for: movie, model: interactor.movie)) {
       content()
     }
   }

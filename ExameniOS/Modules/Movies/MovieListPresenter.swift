@@ -13,6 +13,8 @@ class MovieListPresenter: ObservableObject {
     @Published var upcomingState: MovieListInteractor
     @Published var topRatedState: MovieListInteractor
     @Published var popularState: MovieListInteractor
+    @Published var name: String
+    @Published var image: UIImage
     
     init(interactor: MovieListInteractor) {
         self.interactor = interactor
@@ -21,9 +23,15 @@ class MovieListPresenter: ObservableObject {
         self.topRatedState = interactor
         self.popularState = interactor
         self.movies = interactor.movies
+        self.image = UIImage()
+        self.name = ""
         interactor.$movies
             .assign(to: \.movies, on: self)
           .store(in: &cancellables)
+    }
+    
+    func sendSelfie() {
+        interactor.sendSelfie(name: name, image: image)
     }
     
     func linkBuilder<Content: View>(for movie: Movie, @ViewBuilder content: () -> Content

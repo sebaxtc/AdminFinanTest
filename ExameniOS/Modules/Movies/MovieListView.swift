@@ -36,7 +36,7 @@ struct MovieListView: View {
                 
                 VStack{
                     Button("Enviar") {
-                        print("hey")
+                        presenter.sendSelfie()
                     }
                     .background(Color.red)
                     .fixedSize()

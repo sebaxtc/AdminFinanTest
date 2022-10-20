@@ -4,7 +4,6 @@ import SwiftUI
 struct MovieBackdropCard: View {
     
     let movie: Movie
-    @ObservedObject var imageLoader = ImageLoader()
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -12,10 +11,15 @@ struct MovieBackdropCard: View {
                 Rectangle()
                     .fill(Color.gray.opacity(0.3))
                 
-                if self.imageLoader.image != nil {
-                    Image(uiImage: self.imageLoader.image!)
-                    .resizable()
-                }
+                AsyncImage(
+                    url: movie.backdropURL,
+                    content: { image in
+                        image.resizable()
+                    },
+                    placeholder: {
+                        ProgressView()
+                    }
+                )
             }
             .aspectRatio(16/9, contentMode: .fit)
             .cornerRadius(8)
@@ -24,8 +28,5 @@ struct MovieBackdropCard: View {
             Text(movie.title)
         }
         .lineLimit(1)
-        .onAppear {
-            self.imageLoader.loadImage(with: self.movie.backdropURL)
-        }
     }
 }

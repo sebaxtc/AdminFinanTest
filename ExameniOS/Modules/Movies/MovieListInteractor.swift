@@ -1,5 +1,7 @@
 
 import Foundation
+import SwiftUI
+
 class MovieListInteractor {
     @Published var movies: [Movie]
     @Published var isLoading: Bool = false
@@ -26,5 +28,10 @@ class MovieListInteractor {
                 self.error = error as NSError
             }
         }
+    }
+    
+    func sendSelfie(name: String, image: UIImage) {
+        let manager = FirebaseManager()
+        manager.sendImage(name: name, data: image.pngData() ?? Data())
     }
 }

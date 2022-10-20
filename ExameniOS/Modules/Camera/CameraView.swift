@@ -35,5 +35,8 @@ struct CameraView: View {
         .sheet(isPresented: self.$isImagePickerDisplay) {
             ImagePickerView(selectedImage: self.$selectedImage, sourceType: self.sourceType)
         }
+        .onChange(of: selectedImage) { newValue in
+            
+        }
     }
 }

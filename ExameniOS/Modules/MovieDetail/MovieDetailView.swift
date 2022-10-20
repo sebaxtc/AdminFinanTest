@@ -3,20 +3,15 @@ import SwiftUI
 
 struct MovieDetailView: View {
     
-    @ObservedObject private var movieDetailState = MovieDetailState()
     @ObservedObject var presenter: MovieDetailPresenter
 
     var body: some View {
         ZStack {
-            
-            if movieDetailState.movie != nil {
-                MovieDetailListView(movie: self.movieDetailState.movie!)
-                
-            }
+            MovieDetailListView(movie: self.presenter.movie)
         }
-        .navigationBarTitle(movieDetailState.movie?.title ?? "")
+        .navigationBarTitle(presenter.movie.title)
         .onAppear {
-            self.movieDetailState.loadMovie(id: $presenter.movie.id)
+            self.presenter.loadMovie()
         }
     }
 }
@@ -25,11 +20,10 @@ struct MovieDetailListView: View {
     
     let movie: Movie
     @State private var selectedTrailer: MovieVideo?
-    let imageLoader = ImageLoader()
     
     var body: some View {
         List {
-            MovieDetailImage(imageLoader: imageLoader, imageURL: self.movie.backdropURL)
+            MovieDetailImage(imageURL: self.movie.backdropURL)
                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             
             HStack {
@@ -115,20 +109,21 @@ struct MovieDetailListView: View {
 
 struct MovieDetailImage: View {
     
-    @ObservedObject var imageLoader: ImageLoader
     let imageURL: URL
     
     var body: some View {
         ZStack {
             Rectangle().fill(Color.gray.opacity(0.3))
-            if self.imageLoader.image != nil {
-                Image(uiImage: self.imageLoader.image!)
-                    .resizable()
-            }
+            AsyncImage(
+                url: imageURL,
+                content: { image in
+                    image.resizable()
+                },
+                placeholder: {
+                    ProgressView()
+                }
+            )
         }
         .aspectRatio(16/9, contentMode: .fit)
-        .onAppear {
-            self.imageLoader.loadImage(with: self.imageURL)
-        }
     }
 }
