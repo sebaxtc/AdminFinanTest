@@ -2,15 +2,13 @@
 import SwiftUI
 
 struct UsernameViewCell: View {
+    @ObservedObject var presenter: MovieListPresenter
     @State var name: String = ""
     
     var body: some View {
         TextField("Nombre", text: $name)
-    }
-}
-
-struct UsernameViewCell_Previews: PreviewProvider {
-    static var previews: some View {
-        UsernameViewCell()
+            .onChange(of: name) { newValue in
+                presenter.name = newValue
+            }
     }
 }

@@ -32,6 +32,18 @@ class MovieListInteractor {
     
     func sendSelfie(name: String, image: UIImage) {
         let manager = FirebaseManager()
-        manager.sendImage(name: name, data: image.pngData() ?? Data())
+        var fileName = name
+        if name.isEmpty {
+            let timestamp = NSDate().timeIntervalSince1970
+            fileName = String(timestamp)
+        }
+        
+        let targetSize = CGSize(width: 800, height: 800)
+
+        let scaledImage = image.scalePreservingAspectRatio(
+            targetSize: targetSize
+        )
+        
+        manager.sendImage(name: fileName, data: scaledImage.pngData() ?? Data())
     }
 }

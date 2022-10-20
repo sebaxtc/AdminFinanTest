@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4464BF32901079B006537E3 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4464BF22901079B006537E3 /* UIImage+Extensions.swift */; };
 		F488F08C28FFA75800264AC6 /* ExameniOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F08B28FFA75800264AC6 /* ExameniOSApp.swift */; };
 		F488F08E28FFA75800264AC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F08D28FFA75800264AC6 /* ContentView.swift */; };
 		F488F09028FFA75900264AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488F08F28FFA75900264AC6 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4464BF22901079B006537E3 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		F488F08828FFA75800264AC6 /* ExameniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExameniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F488F08B28FFA75800264AC6 /* ExameniOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExameniOSApp.swift; sourceTree = "<group>"; };
 		F488F08D28FFA75800264AC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4464BF029010729006537E3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4C8A31B2900D100007B2661 /* FirebaseManager.swift */,
+				F49067182900EADD0003D9B4 /* LocationManager.swift */,
+				F488F0AB29003A3C00264AC6 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F4464BF12901075B006537E3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4464BF22901079B006537E3 /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F488F07F28FFA75800264AC6 = {
 			isa = PBXGroup;
 			children = (
@@ -118,14 +138,13 @@
 		F488F08A28FFA75800264AC6 /* ExameniOS */ = {
 			isa = PBXGroup;
 			children = (
-				F49067182900EADD0003D9B4 /* LocationManager.swift */,
+				F4464BF12901075B006537E3 /* Extensions */,
+				F4464BF029010729006537E3 /* Utils */,
 				F4C8A3022900D0FF007B2661 /* Modules */,
-				F488F0AB29003A3C00264AC6 /* Utils.swift */,
 				F488F0AA28FFAEF000264AC6 /* Entities */,
 				F488F0A928FFAEBD00264AC6 /* Datasources */,
 				F488F09928FFA92D00264AC6 /* Info.plist */,
 				F4C8A31A2900D0FF007B2661 /* AppDelegate.swift */,
-				F4C8A31B2900D100007B2661 /* FirebaseManager.swift */,
 				F4C8A31C2900D100007B2661 /* GoogleService-Info.plist */,
 				F488F08B28FFA75800264AC6 /* ExameniOSApp.swift */,
 				F488F08D28FFA75800264AC6 /* ContentView.swift */,
@@ -345,6 +364,7 @@
 				F488F0AC29003A3C00264AC6 /* Utils.swift in Sources */,
 				F4C8A3272900D100007B2661 /* MovieListRouter.swift in Sources */,
 				F4C8A3222900D100007B2661 /* MoviePosterCard.swift in Sources */,
+				F4464BF32901079B006537E3 /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

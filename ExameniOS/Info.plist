@@ -11,7 +11,7 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We are requesting user auth to read GPS - ALWAYS</string>
-	<key>Camera Usage Description</key>
+	<key>NSCameraUsageDescription</key>
 	<string>Por favor permite el acceso a camara</string>
 </dict>
 </plist>

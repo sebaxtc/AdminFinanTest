@@ -2,6 +2,7 @@
 import SwiftUI
 
 struct RequestSelfieView: View {
+    @ObservedObject var presenter: MovieListPresenter
     @State var sourceType: UIImagePickerController.SourceType = .camera
     @State var selectedImage: UIImage?
     @State var isImagePickerDisplay = false
@@ -27,11 +28,8 @@ struct RequestSelfieView: View {
         .sheet(isPresented: self.$isImagePickerDisplay) {
             ImagePickerView(selectedImage: self.$selectedImage, sourceType: self.sourceType)
         }
-    }
-}
-
-struct RequestSelfieView_Previews: PreviewProvider {
-    static var previews: some View {
-        RequestSelfieView()
+        .onChange(of: selectedImage ?? UIImage()) { newValue in
+            presenter.image = newValue
+        }
     }
 }

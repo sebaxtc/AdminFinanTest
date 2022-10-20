@@ -6,7 +6,7 @@ import FirebaseStorage
 
 class FirebaseManager {
     func sendLocation(location: CLLocationCoordinate2D) {
-        var ref = Database.database().reference()
+        let ref = Database.database().reference()
         ref.child("Locations").childByAutoId().setValue([
             "lat": String(location.latitude),
             "lon": String(location.longitude)
