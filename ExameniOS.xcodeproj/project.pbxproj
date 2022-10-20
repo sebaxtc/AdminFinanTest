@@ -11,32 +11,35 @@
 		F488F08E28FFA75800264AC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F08D28FFA75800264AC6 /* ContentView.swift */; };
 		F488F09028FFA75900264AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488F08F28FFA75900264AC6 /* Assets.xcassets */; };
 		F488F09328FFA75900264AC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488F09228FFA75900264AC6 /* Preview Assets.xcassets */; };
-		F488F09D28FFAC8100264AC6 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F09C28FFAC8100264AC6 /* MovieListView.swift */; };
-		F488F09F28FFAD3B00264AC6 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F09E28FFAD3B00264AC6 /* MovieListPresenter.swift */; };
-		F488F0A128FFAD7B00264AC6 /* MovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0A028FFAD7B00264AC6 /* MovieListInteractor.swift */; };
 		F488F0A728FFAE4F00264AC6 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0A528FFAE4F00264AC6 /* MovieService.swift */; };
 		F488F0A828FFAE4F00264AC6 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0A628FFAE4F00264AC6 /* MovieStore.swift */; };
 		F488F0AC29003A3C00264AC6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0AB29003A3C00264AC6 /* Utils.swift */; };
 		F488F0AF29003ACD00264AC6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0AD29003ACC00264AC6 /* Movie.swift */; };
-		F488F0BB29003BB700264AC6 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0B129003BB700264AC6 /* MovieDetailView.swift */; };
-		F488F0BC29003BB700264AC6 /* MoviePosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0B229003BB700264AC6 /* MoviePosterCarouselView.swift */; };
-		F488F0BD29003BB700264AC6 /* SelfieNameUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0B329003BB700264AC6 /* SelfieNameUserView.swift */; };
-		F488F0BE29003BB700264AC6 /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0B429003BB700264AC6 /* MovieBackdropCarouselView.swift */; };
-		F488F0C029003BB700264AC6 /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0B629003BB700264AC6 /* MovieBackdropCard.swift */; };
-		F488F0C129003BB700264AC6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0B729003BB700264AC6 /* CameraView.swift */; };
-		F488F0C229003BB700264AC6 /* MoviePosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0B829003BB700264AC6 /* MoviePosterCard.swift */; };
-		F488F0C329003BB700264AC6 /* UsernameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0B929003BB700264AC6 /* UsernameViewCell.swift */; };
-		F488F0C429003BB700264AC6 /* RequestSelfieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0BA29003BB700264AC6 /* RequestSelfieView.swift */; };
-		F488F0CA29003C7700264AC6 /* MovieListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0C629003C7700264AC6 /* MovieListState.swift */; };
-		F488F0CB29003C7700264AC6 /* MovieDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0C729003C7700264AC6 /* MovieDetailState.swift */; };
-		F488F0CC29003C7700264AC6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0C829003C7700264AC6 /* ImageLoader.swift */; };
-		F488F0CD29003C7700264AC6 /* MovieSearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0C929003C7700264AC6 /* MovieSearchState.swift */; };
-		F488F0CF29003D1A00264AC6 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0CE29003D1A00264AC6 /* ImagePickerView.swift */; };
-		F488F0D129003D8200264AC6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0D029003D8200264AC6 /* Coordinator.swift */; };
-		F488F0D329003F3C00264AC6 /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0D229003F3C00264AC6 /* MovieListRouter.swift */; };
-		F488F0D82900401F00264AC6 /* MovieDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0D52900401E00264AC6 /* MovieDetailInteractor.swift */; };
-		F488F0D92900401F00264AC6 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0D62900401E00264AC6 /* MovieDetailPresenter.swift */; };
-		F488F0DA2900401F00264AC6 /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488F0D72900401E00264AC6 /* MovieDetailRouter.swift */; };
+		F490670F2900D2ED0003D9B4 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F490670E2900D2ED0003D9B4 /* FirebaseDatabase */; };
+		F49067112900D2ED0003D9B4 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F49067102900D2ED0003D9B4 /* FirebaseDatabaseSwift */; };
+		F49067132900D2ED0003D9B4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F49067122900D2ED0003D9B4 /* FirebaseStorage */; };
+		F49067152900D2ED0003D9B4 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F49067142900D2ED0003D9B4 /* FirebaseStorageCombine-Community */; };
+		F4C8A31D2900D100007B2661 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3042900D0FF007B2661 /* ImagePickerView.swift */; };
+		F4C8A31E2900D100007B2661 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3052900D0FF007B2661 /* CameraView.swift */; };
+		F4C8A31F2900D100007B2661 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3062900D0FF007B2661 /* Coordinator.swift */; };
+		F4C8A3202900D100007B2661 /* MovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3082900D0FF007B2661 /* MovieListInteractor.swift */; };
+		F4C8A3212900D100007B2661 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3092900D0FF007B2661 /* MovieListView.swift */; };
+		F4C8A3222900D100007B2661 /* MoviePosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A30B2900D0FF007B2661 /* MoviePosterCard.swift */; };
+		F4C8A3232900D100007B2661 /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A30C2900D0FF007B2661 /* MovieBackdropCard.swift */; };
+		F4C8A3242900D100007B2661 /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A30D2900D0FF007B2661 /* MovieBackdropCarouselView.swift */; };
+		F4C8A3252900D100007B2661 /* MoviePosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A30E2900D0FF007B2661 /* MoviePosterCarouselView.swift */; };
+		F4C8A3262900D100007B2661 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A30F2900D0FF007B2661 /* MovieListPresenter.swift */; };
+		F4C8A3272900D100007B2661 /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3102900D0FF007B2661 /* MovieListRouter.swift */; };
+		F4C8A3282900D100007B2661 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3122900D0FF007B2661 /* MovieDetailView.swift */; };
+		F4C8A3292900D100007B2661 /* MovieDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3132900D0FF007B2661 /* MovieDetailInteractor.swift */; };
+		F4C8A32A2900D100007B2661 /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3142900D0FF007B2661 /* MovieDetailRouter.swift */; };
+		F4C8A32B2900D100007B2661 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3152900D0FF007B2661 /* MovieDetailPresenter.swift */; };
+		F4C8A32C2900D100007B2661 /* RequestSelfieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3172900D0FF007B2661 /* RequestSelfieView.swift */; };
+		F4C8A32D2900D100007B2661 /* SelfieNameUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3182900D0FF007B2661 /* SelfieNameUserView.swift */; };
+		F4C8A32E2900D100007B2661 /* UsernameViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A3192900D0FF007B2661 /* UsernameViewCell.swift */; };
+		F4C8A32F2900D100007B2661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A31A2900D0FF007B2661 /* AppDelegate.swift */; };
+		F4C8A3302900D100007B2661 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8A31B2900D100007B2661 /* FirebaseManager.swift */; };
+		F4C8A3312900D100007B2661 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4C8A31C2900D100007B2661 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,32 +49,31 @@
 		F488F08F28FFA75900264AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F488F09228FFA75900264AC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F488F09928FFA92D00264AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		F488F09C28FFAC8100264AC6 /* MovieListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
-		F488F09E28FFAD3B00264AC6 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
-		F488F0A028FFAD7B00264AC6 /* MovieListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListInteractor.swift; sourceTree = "<group>"; };
 		F488F0A528FFAE4F00264AC6 /* MovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		F488F0A628FFAE4F00264AC6 /* MovieStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 		F488F0AB29003A3C00264AC6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F488F0AD29003ACC00264AC6 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		F488F0B129003BB700264AC6 /* MovieDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
-		F488F0B229003BB700264AC6 /* MoviePosterCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePosterCarouselView.swift; sourceTree = "<group>"; };
-		F488F0B329003BB700264AC6 /* SelfieNameUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieNameUserView.swift; sourceTree = "<group>"; };
-		F488F0B429003BB700264AC6 /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
-		F488F0B629003BB700264AC6 /* MovieBackdropCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
-		F488F0B729003BB700264AC6 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		F488F0B829003BB700264AC6 /* MoviePosterCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePosterCard.swift; sourceTree = "<group>"; };
-		F488F0B929003BB700264AC6 /* UsernameViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameViewCell.swift; sourceTree = "<group>"; };
-		F488F0BA29003BB700264AC6 /* RequestSelfieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSelfieView.swift; sourceTree = "<group>"; };
-		F488F0C629003C7700264AC6 /* MovieListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListState.swift; sourceTree = "<group>"; };
-		F488F0C729003C7700264AC6 /* MovieDetailState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailState.swift; sourceTree = "<group>"; };
-		F488F0C829003C7700264AC6 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		F488F0C929003C7700264AC6 /* MovieSearchState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSearchState.swift; sourceTree = "<group>"; };
-		F488F0CE29003D1A00264AC6 /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
-		F488F0D029003D8200264AC6 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		F488F0D229003F3C00264AC6 /* MovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouter.swift; sourceTree = "<group>"; };
-		F488F0D52900401E00264AC6 /* MovieDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailInteractor.swift; sourceTree = "<group>"; };
-		F488F0D62900401E00264AC6 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
-		F488F0D72900401E00264AC6 /* MovieDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
+		F4C8A3042900D0FF007B2661 /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		F4C8A3052900D0FF007B2661 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		F4C8A3062900D0FF007B2661 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F4C8A3082900D0FF007B2661 /* MovieListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListInteractor.swift; sourceTree = "<group>"; };
+		F4C8A3092900D0FF007B2661 /* MovieListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		F4C8A30B2900D0FF007B2661 /* MoviePosterCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePosterCard.swift; sourceTree = "<group>"; };
+		F4C8A30C2900D0FF007B2661 /* MovieBackdropCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
+		F4C8A30D2900D0FF007B2661 /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
+		F4C8A30E2900D0FF007B2661 /* MoviePosterCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePosterCarouselView.swift; sourceTree = "<group>"; };
+		F4C8A30F2900D0FF007B2661 /* MovieListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
+		F4C8A3102900D0FF007B2661 /* MovieListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListRouter.swift; sourceTree = "<group>"; };
+		F4C8A3122900D0FF007B2661 /* MovieDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		F4C8A3132900D0FF007B2661 /* MovieDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailInteractor.swift; sourceTree = "<group>"; };
+		F4C8A3142900D0FF007B2661 /* MovieDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
+		F4C8A3152900D0FF007B2661 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		F4C8A3172900D0FF007B2661 /* RequestSelfieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSelfieView.swift; sourceTree = "<group>"; };
+		F4C8A3182900D0FF007B2661 /* SelfieNameUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieNameUserView.swift; sourceTree = "<group>"; };
+		F4C8A3192900D0FF007B2661 /* UsernameViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameViewCell.swift; sourceTree = "<group>"; };
+		F4C8A31A2900D0FF007B2661 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ExameniOS/AppDelegate.swift; sourceTree = "<group>"; };
+		F4C8A31B2900D100007B2661 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseManager.swift; path = ExameniOS/FirebaseManager.swift; sourceTree = "<group>"; };
+		F4C8A31C2900D100007B2661 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "ExameniOS/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49067112900D2ED0003D9B4 /* FirebaseDatabaseSwift in Frameworks */,
+				F490670F2900D2ED0003D9B4 /* FirebaseDatabase in Frameworks */,
+				F49067152900D2ED0003D9B4 /* FirebaseStorageCombine-Community in Frameworks */,
+				F49067132900D2ED0003D9B4 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +94,10 @@
 		F488F07F28FFA75800264AC6 = {
 			isa = PBXGroup;
 			children = (
+				F4C8A31A2900D0FF007B2661 /* AppDelegate.swift */,
+				F4C8A31B2900D100007B2661 /* FirebaseManager.swift */,
+				F4C8A31C2900D100007B2661 /* GoogleService-Info.plist */,
+				F4C8A3022900D0FF007B2661 /* Modules */,
 				F488F08A28FFA75800264AC6 /* ExameniOS */,
 				F488F08928FFA75800264AC6 /* Products */,
 			);
@@ -104,11 +114,9 @@
 		F488F08A28FFA75800264AC6 /* ExameniOS */ = {
 			isa = PBXGroup;
 			children = (
-				F488F0C529003C5000264AC6 /* Interactors */,
 				F488F0AB29003A3C00264AC6 /* Utils.swift */,
 				F488F0AA28FFAEF000264AC6 /* Entities */,
 				F488F0A928FFAEBD00264AC6 /* Datasources */,
-				F488F09A28FFAAE900264AC6 /* Modules */,
 				F488F09928FFA92D00264AC6 /* Info.plist */,
 				F488F08B28FFA75800264AC6 /* ExameniOSApp.swift */,
 				F488F08D28FFA75800264AC6 /* ContentView.swift */,
@@ -124,29 +132,6 @@
 				F488F09228FFA75900264AC6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F488F09A28FFAAE900264AC6 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				F488F0DD29005CDF00264AC6 /* UserIdentification */,
-				F488F0DB29005C4E00264AC6 /* Camera */,
-				F488F0D429003FEC00264AC6 /* MovieDetail */,
-				F488F09B28FFAC5E00264AC6 /* Movies */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		F488F09B28FFAC5E00264AC6 /* Movies */ = {
-			isa = PBXGroup;
-			children = (
-				F488F0DC29005CB400264AC6 /* SubViews */,
-				F488F09C28FFAC8100264AC6 /* MovieListView.swift */,
-				F488F09E28FFAD3B00264AC6 /* MovieListPresenter.swift */,
-				F488F0A028FFAD7B00264AC6 /* MovieListInteractor.swift */,
-				F488F0D229003F3C00264AC6 /* MovieListRouter.swift */,
-			);
-			path = Movies;
 			sourceTree = "<group>";
 		};
 		F488F0A428FFADFD00264AC6 /* Services */ = {
@@ -174,55 +159,68 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		F488F0C529003C5000264AC6 /* Interactors */ = {
+		F4C8A3022900D0FF007B2661 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F488F0C829003C7700264AC6 /* ImageLoader.swift */,
-				F488F0C729003C7700264AC6 /* MovieDetailState.swift */,
-				F488F0C629003C7700264AC6 /* MovieListState.swift */,
-				F488F0C929003C7700264AC6 /* MovieSearchState.swift */,
+				F4C8A3032900D0FF007B2661 /* Camera */,
+				F4C8A3072900D0FF007B2661 /* Movies */,
+				F4C8A3112900D0FF007B2661 /* MovieDetail */,
+				F4C8A3162900D0FF007B2661 /* UserIdentification */,
 			);
-			path = Interactors;
+			name = Modules;
+			path = ExameniOS/Modules;
 			sourceTree = "<group>";
 		};
-		F488F0D429003FEC00264AC6 /* MovieDetail */ = {
+		F4C8A3032900D0FF007B2661 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				F488F0D52900401E00264AC6 /* MovieDetailInteractor.swift */,
-				F488F0D62900401E00264AC6 /* MovieDetailPresenter.swift */,
-				F488F0D72900401E00264AC6 /* MovieDetailRouter.swift */,
-				F488F0B129003BB700264AC6 /* MovieDetailView.swift */,
-			);
-			path = MovieDetail;
-			sourceTree = "<group>";
-		};
-		F488F0DB29005C4E00264AC6 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				F488F0D029003D8200264AC6 /* Coordinator.swift */,
-				F488F0CE29003D1A00264AC6 /* ImagePickerView.swift */,
-				F488F0B729003BB700264AC6 /* CameraView.swift */,
+				F4C8A3042900D0FF007B2661 /* ImagePickerView.swift */,
+				F4C8A3052900D0FF007B2661 /* CameraView.swift */,
+				F4C8A3062900D0FF007B2661 /* Coordinator.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
 		};
-		F488F0DC29005CB400264AC6 /* SubViews */ = {
+		F4C8A3072900D0FF007B2661 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				F488F0B629003BB700264AC6 /* MovieBackdropCard.swift */,
-				F488F0B429003BB700264AC6 /* MovieBackdropCarouselView.swift */,
-				F488F0B829003BB700264AC6 /* MoviePosterCard.swift */,
-				F488F0B229003BB700264AC6 /* MoviePosterCarouselView.swift */,
+				F4C8A3082900D0FF007B2661 /* MovieListInteractor.swift */,
+				F4C8A3092900D0FF007B2661 /* MovieListView.swift */,
+				F4C8A30A2900D0FF007B2661 /* SubViews */,
+				F4C8A30F2900D0FF007B2661 /* MovieListPresenter.swift */,
+				F4C8A3102900D0FF007B2661 /* MovieListRouter.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		F4C8A30A2900D0FF007B2661 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				F4C8A30B2900D0FF007B2661 /* MoviePosterCard.swift */,
+				F4C8A30C2900D0FF007B2661 /* MovieBackdropCard.swift */,
+				F4C8A30D2900D0FF007B2661 /* MovieBackdropCarouselView.swift */,
+				F4C8A30E2900D0FF007B2661 /* MoviePosterCarouselView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
 		};
-		F488F0DD29005CDF00264AC6 /* UserIdentification */ = {
+		F4C8A3112900D0FF007B2661 /* MovieDetail */ = {
 			isa = PBXGroup;
 			children = (
-				F488F0BA29003BB700264AC6 /* RequestSelfieView.swift */,
-				F488F0B329003BB700264AC6 /* SelfieNameUserView.swift */,
-				F488F0B929003BB700264AC6 /* UsernameViewCell.swift */,
+				F4C8A3122900D0FF007B2661 /* MovieDetailView.swift */,
+				F4C8A3132900D0FF007B2661 /* MovieDetailInteractor.swift */,
+				F4C8A3142900D0FF007B2661 /* MovieDetailRouter.swift */,
+				F4C8A3152900D0FF007B2661 /* MovieDetailPresenter.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		F4C8A3162900D0FF007B2661 /* UserIdentification */ = {
+			isa = PBXGroup;
+			children = (
+				F4C8A3172900D0FF007B2661 /* RequestSelfieView.swift */,
+				F4C8A3182900D0FF007B2661 /* SelfieNameUserView.swift */,
+				F4C8A3192900D0FF007B2661 /* UsernameViewCell.swift */,
 			);
 			path = UserIdentification;
 			sourceTree = "<group>";
@@ -243,6 +241,12 @@
 			dependencies = (
 			);
 			name = ExameniOS;
+			packageProductDependencies = (
+				F490670E2900D2ED0003D9B4 /* FirebaseDatabase */,
+				F49067102900D2ED0003D9B4 /* FirebaseDatabaseSwift */,
+				F49067122900D2ED0003D9B4 /* FirebaseStorage */,
+				F49067142900D2ED0003D9B4 /* FirebaseStorageCombine-Community */,
+			);
 			productName = ExameniOS;
 			productReference = F488F08828FFA75800264AC6 /* ExameniOS.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +275,9 @@
 				Base,
 			);
 			mainGroup = F488F07F28FFA75800264AC6;
+			packageReferences = (
+				F490670D2900D2ED0003D9B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F488F08928FFA75800264AC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,6 +294,7 @@
 			files = (
 				F488F09328FFA75900264AC6 /* Preview Assets.xcassets in Resources */,
 				F488F09028FFA75900264AC6 /* Assets.xcassets in Resources */,
+				F4C8A3312900D100007B2661 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,34 +305,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F488F0CD29003C7700264AC6 /* MovieSearchState.swift in Sources */,
 				F488F0A728FFAE4F00264AC6 /* MovieService.swift in Sources */,
-				F488F0D129003D8200264AC6 /* Coordinator.swift in Sources */,
+				F4C8A31E2900D100007B2661 /* CameraView.swift in Sources */,
+				F4C8A32B2900D100007B2661 /* MovieDetailPresenter.swift in Sources */,
+				F4C8A3252900D100007B2661 /* MoviePosterCarouselView.swift in Sources */,
 				F488F08E28FFA75800264AC6 /* ContentView.swift in Sources */,
-				F488F0C029003BB700264AC6 /* MovieBackdropCard.swift in Sources */,
-				F488F0CB29003C7700264AC6 /* MovieDetailState.swift in Sources */,
+				F4C8A3242900D100007B2661 /* MovieBackdropCarouselView.swift in Sources */,
 				F488F0AF29003ACD00264AC6 /* Movie.swift in Sources */,
 				F488F08C28FFA75800264AC6 /* ExameniOSApp.swift in Sources */,
-				F488F0A128FFAD7B00264AC6 /* MovieListInteractor.swift in Sources */,
-				F488F09D28FFAC8100264AC6 /* MovieListView.swift in Sources */,
-				F488F0D82900401F00264AC6 /* MovieDetailInteractor.swift in Sources */,
-				F488F0CF29003D1A00264AC6 /* ImagePickerView.swift in Sources */,
-				F488F0BC29003BB700264AC6 /* MoviePosterCarouselView.swift in Sources */,
-				F488F0C329003BB700264AC6 /* UsernameViewCell.swift in Sources */,
-				F488F09F28FFAD3B00264AC6 /* MovieListPresenter.swift in Sources */,
-				F488F0D92900401F00264AC6 /* MovieDetailPresenter.swift in Sources */,
-				F488F0C429003BB700264AC6 /* RequestSelfieView.swift in Sources */,
-				F488F0C229003BB700264AC6 /* MoviePosterCard.swift in Sources */,
+				F4C8A3302900D100007B2661 /* FirebaseManager.swift in Sources */,
+				F4C8A32F2900D100007B2661 /* AppDelegate.swift in Sources */,
+				F4C8A3202900D100007B2661 /* MovieListInteractor.swift in Sources */,
+				F4C8A32C2900D100007B2661 /* RequestSelfieView.swift in Sources */,
+				F4C8A3292900D100007B2661 /* MovieDetailInteractor.swift in Sources */,
 				F488F0A828FFAE4F00264AC6 /* MovieStore.swift in Sources */,
-				F488F0CC29003C7700264AC6 /* ImageLoader.swift in Sources */,
-				F488F0DA2900401F00264AC6 /* MovieDetailRouter.swift in Sources */,
-				F488F0BE29003BB700264AC6 /* MovieBackdropCarouselView.swift in Sources */,
-				F488F0C129003BB700264AC6 /* CameraView.swift in Sources */,
-				F488F0D329003F3C00264AC6 /* MovieListRouter.swift in Sources */,
+				F4C8A32A2900D100007B2661 /* MovieDetailRouter.swift in Sources */,
+				F4C8A32E2900D100007B2661 /* UsernameViewCell.swift in Sources */,
+				F4C8A3232900D100007B2661 /* MovieBackdropCard.swift in Sources */,
+				F4C8A3262900D100007B2661 /* MovieListPresenter.swift in Sources */,
+				F4C8A32D2900D100007B2661 /* SelfieNameUserView.swift in Sources */,
+				F4C8A3212900D100007B2661 /* MovieListView.swift in Sources */,
+				F4C8A3282900D100007B2661 /* MovieDetailView.swift in Sources */,
+				F4C8A31F2900D100007B2661 /* Coordinator.swift in Sources */,
+				F4C8A31D2900D100007B2661 /* ImagePickerView.swift in Sources */,
 				F488F0AC29003A3C00264AC6 /* Utils.swift in Sources */,
-				F488F0BB29003BB700264AC6 /* MovieDetailView.swift in Sources */,
-				F488F0BD29003BB700264AC6 /* SelfieNameUserView.swift in Sources */,
-				F488F0CA29003C7700264AC6 /* MovieListState.swift in Sources */,
+				F4C8A3272900D100007B2661 /* MovieListRouter.swift in Sources */,
+				F4C8A3222900D100007B2661 /* MoviePosterCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +533,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F490670D2900D2ED0003D9B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F490670E2900D2ED0003D9B4 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F490670D2900D2ED0003D9B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		F49067102900D2ED0003D9B4 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F490670D2900D2ED0003D9B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		F49067122900D2ED0003D9B4 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F490670D2900D2ED0003D9B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F49067142900D2ED0003D9B4 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F490670D2900D2ED0003D9B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F488F08028FFA75800264AC6 /* Project object */;
 }
