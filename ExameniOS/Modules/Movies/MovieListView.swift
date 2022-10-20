@@ -38,9 +38,6 @@ struct MovieListView: View {
                     Button("Enviar") {
                         presenter.sendSelfie()
                     }
-                    .background(Color.red)
-                    .fixedSize()
-                    .frame(minWidth: 240, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
                 }
                 .listRowInsets(EdgeInsets(top: 8, leading: UIScreen.main.bounds.size.width/2 - 60, bottom: 16, trailing: UIScreen.main.bounds.size.width/2 - 60))
             }
